@@ -148,7 +148,7 @@ class Task3 {
         // Fifth figure (vertical trapezoid)
         for (int i = 0; i < maxStarsCount; i++) {
             for (int j = 0; j < maxStarsCount; j++) {
-                if (j < maxStarsCount-1-i) {
+                if (j < maxStarsCount - 1 - i) {
                     System.out.print(" " + " ");
                 } else {
                     System.out.print("*" + " ");
@@ -156,12 +156,12 @@ class Task3 {
             }
             if (i == maxStarsCount - 1) {
                 System.out.println();
-                for (int i2 = 0; i2 < maxStarsCount/2+1; i2++) {
+                for (int i2 = 0; i2 < maxStarsCount / 2 + 1; i2++) {
                     for (int j2 = 0; j2 < maxStarsCount; j2++) {
                         System.out.print("*" + " ");
                     }
                     System.out.println();
-                    if (i2+maxStarsCount/2==maxStarsCount) {
+                    if (i2 + maxStarsCount / 2 == maxStarsCount) {
                         for (int i3 = 0; i3 < maxStarsCount; i3++) {
                             for (int j3 = 0; j3 < maxStarsCount; j3++) {
                                 if (j3 < i3) {
@@ -177,7 +177,38 @@ class Task3 {
             }
             System.out.println();
         }
+        //Sixth figure
+        for (int i = 0; i < maxStarsCount; i++) {
+            for (int j = 0; j < maxStarsCount; j++) {
+                if (j < maxStarsCount - 1 - i) {
+                    System.out.print(" " + " ");
+                } else {
+                    System.out.print("*" + " ");
+                }
+            }
+            System.out.println();
+            if (i == maxStarsCount - 1) {
+                for (int i2 = 0; i2 < maxStarsCount / 2 + 1; i2++) {
+                    for (int j2 = 0; j2 < maxStarsCount; j2++) {
+                        System.out.print("*" + " ");
+                    }
+                    System.out.println();
+                    if (i2 + maxStarsCount / 2 == maxStarsCount) {
+                        for (int i3 = 0; i3 < maxStarsCount; i3++) {
+                            for (int j3 = i3; j3 < maxStarsCount; j3++) {
+                                System.out.print("*" + " ");
+                            }
+                            System.out.println();
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+class Task4 {
+    public static void main(String[] args) {
 
     }
-
 }
